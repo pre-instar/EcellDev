@@ -1,42 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="webdev.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="header">
-        <a id="Ecell"><b>E cell</b></a>
-        <a class="icons">HOME</a>
-        <a class="icons">EVENTS</a>
-        <a class="icons">ABOUT</a>
-        <a class="icons">CONTACT US</a>
-        <button><a class="icons"><b>LOGIN/SIGNUP</b></a></button>
-    </div>
-<div id="mainbx">
-   <div id="one"><b>Login</b></div>
-   <div id="two"><button><b>Sign in</b></button></div>
-    <hr >
-    <h1>Create your account</h1>
-    <form action="/action">
-        <label for="email"><b>Email</b></label>
-        <input type="email" placeholder="Enter your email address" id="email">
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Create Account | E-Cell</title> 
+    <link rel="stylesheet" href="webdev.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+</head> 
+<body> 
+    <!-- Header -->
+    <header id="header"> 
+        <a id="Ecell"><b>E-Cell</b></a> 
+        <a class="icons" href="#">HOME</a> 
+        <a class="icons" href="#">EVENTS</a> 
+        <a class="icons" href="#">ABOUT</a> 
+        <a class="icons" href="#">CONTACT US</a> 
+        <button><a class="icons"><b>LOGIN/SIGNUP</b></a></button> 
+    </header> 
 
-        <label for="username"><b>Email</b></label>
-        <input type="text" placeholder="Enter your full name" id="username">
+    <!-- Main Box -->
+    <div id="mainbx"> 
+        <div id="tabs">
+            <div id="one"><b>Login</b></div> 
+            <div id="two"><button><b>Sign Up</b></button></div> 
+        </div> 
+        <hr> 
 
-        <label for="password"><b>Password</b></label>
-        <input type="password" placeholder="Type to create a password" id="password">
-    
-        <button id="login">Login</button>
-        <button id="google">Sign up with google</button>    
-    </form>
-  
-</div>
-</body>
+        <!-- Form Section -->
+        <h1>Create Your Account</h1> 
+        <form action="/action"> 
+            <label for="email"><b>Email</b></label> 
+            <input type="email" placeholder="Enter your email address" id="email" required> 
+
+            <label for="username"><b>Full Name</b></label> 
+            <input type="text" placeholder="Enter your full name" id="username" required> 
+
+            <label for="password"><b>Password</b></label> 
+            <input type="password" placeholder="Type to create a password" id="password" required> 
+         
+            <button id="login">Login</button> 
+            <button id="google">Sign Up with Google</button>     
+        </form> 
+    </div> 
+</body> 
 </html>
