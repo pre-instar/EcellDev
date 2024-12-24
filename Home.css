@@ -3,21 +3,21 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #ede8f5; /* Light background */
-    color: black;
+    background-color: #f4f4f4; /* Match background with previous pages */
+    color: #333; /* Consistent text color */
     margin-top: 3.5rem; /* To account for the floating navbar */
-    margin-bottom: 3rem; /* To account for the fixed footer bar */
+    margin-bottom: 3rem; /* To account for the fixed footer */
 }
 
 /* Floating Top Bar (Navbar) */
 .navbar {
     width: 100%;
-    background: #3d52a0; /* Dark blue background for navbar */
+    background: #2c3e50; /* Match header background color */
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.8rem 2rem;
+    padding: 20px 2rem; /* Match padding with the first header */
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -25,7 +25,7 @@ body {
 }
 
 .navbar .nav-title {
-    font-size: 1.5rem;
+    font-size: 2rem; /* Match the font size of the first page's header */
     font-weight: bold;
 }
 
@@ -39,161 +39,58 @@ body {
 .navbar nav a {
     text-decoration: none;
     color: white;
-    font-weight: 600;
-    font-size: 1rem;
+    font-size: 1rem; /* Consistent font size */
     padding: 0.4rem 0;
-    transition: 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #1abc9c; /* Match hover color with the first navbar */
 }
 
 .navbar nav .login-signup {
-    margin-right: 100px;
-    padding: 0.5rem .5rem;
+    padding: 0.5rem 1rem;
     background: white;
-    color: #3d52a0;
+    color: #2c3e50; /* Match button with the navbar background */
     border-radius: 20px;
     font-size: 0.9rem;
-    transition: 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-.navbar nav a:hover,
 .navbar nav .login-signup:hover {
-    opacity: 0.8;
-}
-
-/* Login Form Styling */
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 6.5rem); /* Adjust for navbar and footer */
-}
-
-/* Outer Box for Login */
-.login-box-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f4f4f4; /* Light grey background for the outer box */
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Login Box (Inner Box) */
-.login-form {
-    width: 350px;
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.login-form h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    color: #3d52a0;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    font-size: 1rem;
-    color: #3d52a0;
-    margin-bottom: 0.5rem;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-}
-
-.form-group input:focus {
-    outline: none;
-    border-color: #3d52a0;
-}
-
-.btn {
-    padding: 0.8rem;
-    background: #3d52a0; /* Solid color instead of gradient */
+    background: #1abc9c; /* Match hover effect with navbar links */
     color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
-    transition: 0.3s ease;
 }
 
-.btn:hover {
-    opacity: 0.9;
-}
-
-.signup-link {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #3d52a0;
-}
-
-.signup-link a {
-    color: #3d52a0;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.signup-link a:hover {
-    text-decoration: underline;
-}
-
-/* Fixed Bottom Bar (Footer) */
-.footer {
-    width: 100%;
-    background: #3d52a0; /* Solid color instead of gradient */
-    color: white;
-    position: fixed;
-    bottom: 0;
-    z-index: 1000;
-    text-align: center;
-    padding: 0.8rem;
-    font-size: 1rem;
-    font-weight: 600;
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
+/* Container Styling */
 .container {
     text-align: center;
-    padding: 2rem;
+    padding: 40px 20px; /* Match section padding from the first page */
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* Match hero section font size */
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 20px; /* Consistent spacing */
 }
 
 p {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
+    font-size: 1.25rem; /* Match font size in the hero section */
+    margin: 10px 0;
 }
 
+/* Image Styling */
 .images {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 2rem 0;
+    margin: 20px 0;
 }
 
 .images img {
-    width: 45%;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Consistent sizing */
+    border-radius: 10px; /* Add rounded corners for consistency */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a cohesive look */
 }
 
 .tagline {
@@ -203,6 +100,20 @@ p {
     color: #555;
 }
 
+/* Fixed Bottom Bar (Footer) */
+.footer {
+    width: 100%;
+    background: #2c3e50; /* Match footer background color with the first page */
+    color: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    text-align: center;
+    padding: 20px 0; /* Match footer padding */
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
@@ -215,11 +126,11 @@ p {
         gap: 1rem;
     }
 
-    .login-box-wrapper {
-        padding: 1rem;
+    .images {
+        flex-direction: column;
     }
 
-    .login-form {
-        width: 90%;
+    .images img {
+        width: 90%; /* Adjust for smaller screens */
     }
 }
