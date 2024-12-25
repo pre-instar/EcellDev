@@ -51,6 +51,44 @@ nav ul li a:hover {
     color: #1abc9c;
 }
 
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.auth-buttons .login {
+    background: white;
+    color: #2c3e50;
+    border: 2px solid #2c3e50;
+}
+
+.auth-buttons .login:hover {
+    background: #1abc9c;
+    color: white;
+    border-color: #1abc9c;
+}
+
+.auth-buttons .signup {
+    background: #1abc9c;
+    color: white;
+    border: 2px solid #1abc9c;
+}
+
+.auth-buttons .signup:hover {
+    background: white;
+    color: #2c3e50;
+    border-color: #2c3e50;
+}
+
 /* Hero Section */
 .hero {
     background-color: #3498db;
