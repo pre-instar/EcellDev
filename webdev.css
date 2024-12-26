@@ -1,136 +1,24 @@
-/* General Body Styling */
-body { 
-    background-color: #f4f4f4;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-
- #header {
-    height: 40px;
-    width: 100%;
-    background-color: #2c3e50;
-    border-radius: 10px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-#Ecell {
-    font-size: 1.5rem;
-    color: white;
-    margin-right: auto;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    margin: 0 15px;
-}
-
-.icons {
-    margin-right: 35px;
-}
-
-button a {
-    color: black;
-    font-size: 0.9rem;
-} 
-
-/* Main Box Styling */
-#mainbx {
-    width: 450px;
-    margin: 70px auto 30px;
-    padding: 20px;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Tab Styling */
-#tabs {
-    display: flex;
-    justify-content: space-between;
-}
-
-#one, #two {
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-    color: #333;
-}
-
-#two button {
-    width: 100px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-/* Form Styling */
-form {
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px 5px;
-    font-weight: bold;
-    color: #333;
-}
-
-input {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: white;
-    margin-bottom: 15px;
-}
-
-input:hover {
-    box-shadow: 2px 2px 5px black;
-}
-
-/* Button Styling */
-#login {
-    width: 100%;
-    padding: 10px;
-    background-color:#2c3e50 ;
-    color: white;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-    font-size: 1rem;
-}
-
-#google {
-    width: 100%;
-    padding: 10px;
-    background-color: #2c3e50;
-    color: white;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-    margin-top: 30px;
-    font-size: 1rem;
-}
-
-#login:hover, #google:hover {
-    box-shadow: 2px 2px 5px black;
-}
-
-/* Heading */
-h1 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #3D52A0;
-    margin-bottom: 20px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <hr>
+        <p>Email: <a href="mailto:btechcu2026@gmail.com">btechcu2026@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918741687948">+91 8741687948</a></p>
+        <p>Social Media Links:</p>
+        <ul class="social-media-links">
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        </ul>
+    </div>
+</body>
+</html>
