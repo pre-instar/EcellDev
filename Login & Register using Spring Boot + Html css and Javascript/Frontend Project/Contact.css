@@ -1,0 +1,69 @@
+/* Reset some default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50; /* Match the previous background */
+    color: #333; /* Match text color with the previous design */
+}
+
+/* Contact container styles */
+.contact-container {
+    height:350px;
+    text-align: left;
+    padding: 40px; /* Match padding similar to previous sections */
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: white; /* Match card-style background */
+    border-radius: 10px; /* Add border-radius for a cohesive look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a shadow for consistency */
+}
+
+/* Heading styles */
+.contact-container h1 {
+    font-size: 2rem; /* Match the font size of other sections' titles */
+    font-weight: bold;
+    margin-bottom: 20px; /* Add space below the heading */
+    text-align: center; /* Align heading for symmetry */
+}
+p{
+    margin:15px;
+}
+
+/* Link styles */
+.contact-container a {
+    color: #2c3e50; /* Match the link color used in the nav hover */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+}
+
+.contact-container a:hover {
+    color: #1abc9c; /* Use the hover effect color from the nav */
+}
+
+/* Social media links styles */
+.social-media-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; /* Add spacing above the list */
+}
+
+.social-media-links li {
+    margin: 10px 0;
+}
+
+.social-media-links a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem; /* Match the font size for consistency */
+}
+
+.social-media-links a i {
+    margin-right: 10px;
+    font-size: 1.25rem; /* Adjust size slightly to match other icons */
+}
