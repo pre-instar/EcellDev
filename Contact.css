@@ -7,12 +7,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Match the previous background */
+    background-color: #2c3e50; /* Match the previous background */
     color: #333; /* Match text color with the previous design */
 }
 
 /* Contact container styles */
 .contact-container {
+    height:350px;
     text-align: left;
     padding: 40px; /* Match padding similar to previous sections */
     max-width: 600px;
@@ -29,12 +30,16 @@ body {
     margin-bottom: 20px; /* Add space below the heading */
     text-align: center; /* Align heading for symmetry */
 }
+p{
+    margin:15px;
+}
 
 /* Link styles */
 .contact-container a {
-    color: #3498db; /* Match the link color used in the nav hover */
+    color: #2c3e50; /* Match the link color used in the nav hover */
     text-decoration: none;
     transition: color 0.3s ease;
+    
 }
 
 .contact-container a:hover {
